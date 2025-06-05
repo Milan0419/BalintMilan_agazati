@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">    <!-- 1. lang hu -->
 <head>
+    <meta charset="UTF-8">      <!-- 1. UTF-8 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutyák</title>    <!-- 2. Kutyák -->
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="dog.css">      <!-- 3. dog. css hivatkozás -->
     <script src="bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="alap">           <!-- 4. id="alap" -->
         <!-- Képvetítő --> 
         <div id="vetito" class="carousel slide w-100" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -20,20 +23,26 @@
               <div class="carousel-item">
                 <img src="d03.jpg" class="d-block w-100">
               </div>
+              <div class="carousel-item">               <!-- 5. d04 képvetítő -->
+                <img src="d04.jpg" class="d-block w-100">
+              </div>
             </div>
           </div>
           
         <!-- Navigáció --> 
         <nav class="navbar navbar-expand-lg">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item fw-bold">               <!-- 6. fw-bold -->
                     <a class="nav-link text-light" href="#bevezeto">Bevezető</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item fw-bold">               <!-- 6. fw-bold -->
                     <a class="nav-link text-light" href="#felhasznalas">Kutyafajták felhasználás szerint</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item fw-bold">               <!-- 6. fw-bold -->
                     <a class="nav-link text-light" href="#magyar">Magyar kutyafajták</a>
+                </li>
+                <li class="nav-item fw-bold">              <!-- 6. "Felhasznált források”; forrasok;  fw-bold -->
+                    <a class="nav-link text-light" href="#forrasok">Felhasznált Források</a>
                 </li>
             </ul>
 
@@ -41,10 +50,10 @@
     
         <!-- Bevezető --> 
         <section id="bevezeto">
-            <p>Kutyák</p>
+            <h1>Kutyák</h1>         <!-- 7. 1-es szintű címsor: Kutyák -->
             <p>
-                A kutya vagy eb (Canis lupus familiaris) ujjon járó emlős ragadozó állat, a szürke farkas egy már kihalt alfajának háziasított formája. Az egyetlen olyan emlős állatfaj, amely tudományos nevében megkapta a familiaris, azaz a családhoz tartozó jelzőt. A kutyákat szokás a társállatok sorában emlegetni.
-            </p>
+                A kutya vagy eb <i>(Canis lupus familiaris)</i> ujjon járó emlős ragadozó állat, a szürke farkas egy már kihalt alfajának háziasított formája. Az egyetlen olyan emlős állatfaj, amely tudományos nevében megkapta a familiaris, azaz a családhoz tartozó jelzőt. A kutyákat szokás a társállatok sorában emlegetni.
+            </p>                    <!-- 8. dőlt betűs írás -->
             <p>
                 Ezenkívül tágabb értelemben kutyának neveznek a kutyafélék családján belül a valódi kutyaformák nemzetségéhez tartozó több más fajt is: ilyenek például a kisfülű kutya, az ázsiai vadkutya , a nyestkutya , az afrikai vadkutya vagy hiénakutya és az őserdei kutya. A háziasított kutyát mindezektől a házikutya elnevezéssel különböztetik meg.
             </p>
@@ -57,11 +66,35 @@
         <section id="felhasznalas">
             <h2>Kutyafajták felhasználás szerint</h2>
             <div class="row">
-                <div class="col-md-3">
-                  
+                <div class="col-md-3">          <!-- 9.d: forrás.txt fájl bemásolása -->
+                    <h4>Munkakutyák</h4>        <!-- 9.e: 4-es szintű címsorok -->
+                    <ul>                        <!-- 9.f: felsorolás a  minta szerint -->
+                        <li>Őrző-védő kutyák</li>
+                        <li>Pásztorkutyák</li>
+                        <li>Szánhúzó kutyák</li>
+                    </ul>
+
+                    <h4>Kedvtelésből tartott ebek</h4>
+                    <ul>
+                        <li>Ölebek, Hobbikutyák</li>
+                    </ul>
+
+                    <h4>Vadászkutyák</h4>
+                    <ul>
+                        <li>Vizslák, Pointerek</li>
+                        <li>Szetterek, Retriverek</li>
+                        <li>Agarak</li>
+                        <li>Agarak</li>
+                        <li>Terrierek</li>
+                        <li>Spánielek</li>
+                        <li>Spánielek</li>
+                        <li>Kopók</li>
+                        <li>Vérebek</li>
+                        <li>Tacskók</li>
+                    </ul>
                 </div>
                 <div class="col-md-9">
-                   
+                   <img src="dogs.jpg" alt="Kutyafajták" title="Kutyafajták" class="img-thumbnail ">    <!-- 9. a: dogs.jpg; b: kutyafajták cím; c: img-thumbnail  -->
                 </div>
             </div>
         </section>
@@ -70,55 +103,55 @@
         <section id="magyar">
             <h2>Magyar kutyafajták</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">              <!-- 10. A képek 3 oszlopban jelennek meg -->
                     <div class="card">
                         <img class="card-img-top" src="puli.jpg" alt="Puli">
                         <p class="card-text">Puli</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="komondor.jpg" alt="Komondor">
                         <p class="card-text">Komondor</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="kuvasz.jpg" alt="Kuvasz">
                         <p class="card-text">Kuvasz</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="pumi.jpg" alt="Pumi">
                         <p class="card-text">Pumi</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="mudi.jpg" alt="Mudi">
                         <p class="card-text">Mudi</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="magyar_agar.jpg" alt="Magyar agár">
                         <p class="card-text">Magyar agár</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="erdelyi_kopo.jpeg" alt="Erdélyi kopó">
                         <p class="card-text">Erdélyi kopó</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="drotszoru.jpg" alt="Drótszőrű magyar vizsla">
                         <p class="card-text">Drótszőrű magyar vizsla</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img class="card-img-top" src="rovidszoru.jpg" alt="Rövidszőrű magyar vizsla">
                         <p class="card-text">Rövidszőrű magyar vizsla</p>
@@ -130,7 +163,11 @@
         <!--Források-->
         <section id="forrasok">
             <h2>Források</h2>
-            
+            <ol>            <!-- 11. a: hivatkozások; b: Hivatkozás szövegek; c: új lap -> target="_blank"; d: számozott felsorolás -->
+                <li><a href="https://hu.wikipedia.org/wiki/Kutya" target="_blank">Wikipédia</a></li>
+                <li><a href="https://kutyafajtak.hu/kutyafajtak-felhasznalas-szerint" target="_blank">Kutyafajtak.hu</a></li>
+                <li><a href="https://www.kutyazona.hu/magyar-kutyafajtak" target="_blank">Kutyazona.hu</a></li>
+            </ol>
         </section>
     </div>  
 </body>
