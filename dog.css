@@ -1,4 +1,4 @@
-/* 12. b: az oldal háttérszíne legyen #ebd59b */
+
 body{
     background-color: #ebd59b;
 }
@@ -8,13 +8,13 @@ h1, h2 {
     color: #0a0550;
 }
 
-/* 12.a: sorkizárt bekezdés és 20px margó */
+
 p{
     text-align: justify;
     margin-left: 20px;
 }
 
-/* 12.c: A hivatkozás mindig vörös, aláhúzás nélküli */
+
 a{
     color: #8b0000;
     text-decoration: none;
@@ -31,7 +31,7 @@ a:visited{
 a:active{
     color: #8b0000;
 }
-/* 12.c */
+
 
 nav{
     background-color: rgb(10, 5, 80);
